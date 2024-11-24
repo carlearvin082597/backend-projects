@@ -1,16 +1,11 @@
 const http = require('http');
+const routes = require('./routes');
 
+// Pass the request handler directly to the server
+const server = http.createServer(routes);
 
+console.log(routes.someText);
 
-const server = http.createServer((req, res) => {
-    console.log(req.url, req.method, req.headers);
-    //process.exit();
-    res.setHeader('Content-Type', 'text/html'); // Setting Header
-    res.write('<html>');
-    res.write('<head><title>My First Page</title></head>');
-    res.write('<body><h1>Hello from my Node.js server!</h1></body>');
-    res.write('</html>');   
-    res.end(); // Sending Response
+server.listen(3000, () => {
+    console.log('Server is running on http://localhost:3000');
 });
- 
-server.listen(3000);

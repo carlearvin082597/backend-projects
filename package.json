@@ -20,5 +20,8 @@
   "homepage": "https://github.com/carlearvin082597/backend-projects#readme",
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
   }
 }

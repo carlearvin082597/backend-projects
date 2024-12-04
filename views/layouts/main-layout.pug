@@ -5,6 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title #{pageTitle}
         link(rel="stylesheet", href="/css/main.css")
+        block styles
     body
         header.main-header 
             nav.main-header__nav  
@@ -12,4 +13,5 @@ html(lang="en")
                     li.main-header__list
                         a(href="/") Shop
                     li.main-header__list
-                        a.active(href="") Add Product
+                        a(href="") Add Product
+        block content 

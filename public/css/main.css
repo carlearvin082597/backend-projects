@@ -38,15 +38,15 @@ h1{
     margin: 0 1rem;
 }
 
-.main-header__item a:hover,
-.main-header__item a:active {
-    color: #1b136b;
-}
+.main-header__list a:hover,
+.main-header__list a:active,
+.main-header__list a:active {
+    color: #e4f30e;}
 
 li a {
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: rgb(13, 10, 58);
 }
 
 .card__image,

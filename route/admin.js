@@ -3,6 +3,7 @@ const path = require('path');
 const express = require('express');
 
 const rootDir = require('../util/path');
+const { title } = require('process');
 
 const router = express.Router();
 
@@ -13,7 +14,7 @@ router.get('/add-product', (req, res, next) => {
 }); 
 
 router.post('/add-product', (req, res, next) => {
-    console.log(req.body);
+    products.push({title: req.body.title });
     res.redirect('/');  
 });
 
